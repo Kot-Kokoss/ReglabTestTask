@@ -1,0 +1,90 @@
+.button {
+  cursor: pointer;
+  width: 128px;
+  height: 36px;
+  padding: 7px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  transition: background-color $duration ease-out;
+
+  &.primary {
+    background-color: $YellowLight;
+    border: 0;
+
+    &:hover {
+      background-color: $YellowDark;
+    }
+  }
+
+  &.secondary {
+    background-color: $White;
+    border: solid $Gray 1px;
+
+    &:hover {
+      border-color: $DarkGray;
+    }
+    
+    &.dropdown {
+      padding: 7px 14px;
+    }
+
+    &.menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      padding: 10px;
+
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  &.nav {
+    background-color: $LightGray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    padding: 8px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    &.page {
+      background-color: $White;
+      padding: 6px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &:hover {
+      background-color: $Gray;
+    }
+  }
+}
+
+.dropdown_wrap {
+  position: relative;
+  
+  .icon {
+    top: 9px;
+    left: 98px;
+    pointer-events: none;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+}

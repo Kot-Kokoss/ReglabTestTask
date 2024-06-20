@@ -1,0 +1,13 @@
+@import './variables';
+@import './normalize';
+
+@import './components/all';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

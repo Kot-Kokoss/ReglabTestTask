@@ -1,0 +1,26 @@
+.menuItem {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 288px;
+  height: 40px;
+  padding: 4px;
+  gap: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 6px;
+  background-color: $LightGray;
+  transition: background-color $duration ease-out;
+  
+  &:hover {
+    background-color: $Gray;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .title {gap: 10px;}
+}
