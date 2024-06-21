@@ -20,7 +20,7 @@
 
   &.secondary {
     background-color: $White;
-    border: solid $Gray 1px;
+    border: solid 1px $Gray;
 
     &:hover {
       border-color: $DarkGray;

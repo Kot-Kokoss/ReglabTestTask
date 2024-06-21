@@ -7,76 +7,86 @@
   <title>Demonstration base 1C:ERP WE</title>
 </head>
 <body>
-  <div class="container">
-    <!-- buttons -->
-    <button class="button primary">Sort</button>
-    <button class="button secondary">Sort</button>
-    <div class="dropdown_wrap">
-      <select class="button secondary dropdown">
-        <option value="1">Sort1</option>
-        <option value="2">Sort2</option>
-        <option value="3">Sort3</option>
-      </select>
-      <img src="./icon/Icon=chevron.svg" class="icon">
-    </div>
-    <button class="button secondary menu">
-      <img src="./icon/Icon=menu-2.svg" alt="">
-    </button>
-    <button class="button nav">
-      <img src="./icon/Icon=menu.svg" alt="">
-    </button>
-    <button class="button nav page">
-      <img src="./icon/Icon=arrow-narrow-right.svg" alt="">
-    </button>
-
-    <!-- menuItems -->
-    <div class="menuItem">
-      <img src="./icon/Icon=star.svg" alt=""> 
-      <div class="title">Favorites</div>
-    </div>
-
-    <!-- tab -->
-    <button class="tab home">
-      <img src="./icon/Icon=home.svg" alt="">
-    </button>
-    
-    <button class="tab setting">
-      <div>Administrator EN(User)</div>
-      <div class="close">
-        <img src="./icon/Icon=cross.svg" alt="">
+  <div class="wrapper">
+    <nav class="left_nav">
+      <div class="head">
+        <div class="user">
+          <img class="avatar" src="./img/a38aa5c88beef6b44818787f12f01807.png" alt="">
+          <div class="username">Livia Mango</div>
+        </div>        
+        <div class="control">
+          <button class="button nav">
+            <img src="./icon/Icon=bell-02.svg" alt="">
+          </button>
+          <button class="button nav">
+            <img src="./icon/Icon=clock-rewind.svg" alt="">
+          </button>
+          <button class="button nav">
+            <img src="./icon/Icon=menu.svg" alt="">
+          </button>
+        </div>
       </div>
-    </button>
-
-    <button class="tab setting active">
-      <div>Administrator EN(User)</div>
-      <div class="close">
-        <img src="./icon/Icon=cross.svg" alt="">
+      <div class="search_wrap">
+        <input type="text" class="search" placeholder="Search" id="search">
+        <img src="./icon/Icon=search.svg" alt="" class="icon_search">
+        <img src="./icon/Icon=combinate.svg" alt="" class="icon_combinate">
       </div>
-    </button>
-
-    <a href="#" class="tab_a">Text</a>
-    <a href="#" class="tab_a active">Text</a>
-
-    <!-- inline -->
-    <div class="inline">
-      <div class="title">Text</div>
-      <select class="dropdown">
-        <option value="1">Text1</option>
-        <option value="2">Text2</option>
-        <option value="3">Text3</option>
-      </select>
-      <img src="./icon/Icon=chevron.svg" class="icon">
-    </div>
-
-     <!-- checkbox -->
-      <div class="checkbox_wrap">
-        <input type="checkbox" class="custom-checkbox" name="checkbox_1" id="checkbox_1">
-        <label for="checkbox_1">Text</label>
+      <div class="menuItems">
+        <div class="menuItem">
+          <img src="./icon/Icon=star.svg" alt=""> 
+          <div>Favorites</div>
+        </div><div class="menuItem">
+          <img src="./icon/Icon=line-chart-up.svg" alt=""> 
+          <div>Budgeting and Planning</div>
+        </div><div class="menuItem">
+          <img src="./icon/Icon=pie-chart.svg" alt=""> 
+          <div>CRM and Marketing</div>
+        </div><div class="menuItem">
+          <img src="./icon/Icon=log-out.svg" alt=""> 
+          <div>Sales</div>
+        </div><div class="menuItem">
+          <img src="./icon/Icon=log-in.svg" alt=""> 
+          <div>Purchases</div>
+        </div><div class="menuItem">
+          <img src="./icon/Icon=route.svg" alt=""> 
+          <div>Warehouse and Delivery</div>
+        </div><div class="menuItem">
+          <img src="./icon/Icon=cube.svg" alt=""> 
+          <div>Production</div>
+        </div><div class="menuItem">
+          <img src="./icon/Icon=wallet.svg" alt=""> 
+          <div>Cash Flow</div>
+        </div><div class="menuItem">
+          <img src="./icon/Icon=bar-chart-square.svg" alt=""> 
+          <div>Financial Result and Controlling</div>
+        </div><div class="menuItem">
+          <img src="./icon/Icon=building.svg" alt=""> 
+          <div>Capital Assets</div>
+        </div><div class="menuItem">
+          <img src="./icon/Icon=bank-note.svg" alt=""> 
+          <div>International Financial Accounting</div>
+        </div><div class="menuItem">
+          <img src="./icon/Icon=settings.svg" alt=""> 
+          <div>Master Data and Settings</div>
+        </div>
       </div>
-    
+    </nav>
   </div>
 
  
-  
+  <script>
+    document.addEventListener('keydown', function(event) {
+      if (event.shiftKey && event.key === 'S' || event.shiftKey && event.key === 'Ы') {
+        
+        const inputElement = document.getElementById('search');
+        
+        if (inputElement !== document.activeElement) {
+          event.preventDefault()
+          inputElement.focus(); 
+          isShiftPressed = false;
+        }
+      }
+    });
+    </script>
 </body>
 </html>
