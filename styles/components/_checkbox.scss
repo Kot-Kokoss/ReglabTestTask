@@ -1,0 +1,56 @@
+.checkbox_wrap {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 7px 0;
+
+  label {
+    padding-bottom: 2px;
+  }
+
+  .custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  
+    & + label {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+    }
+  
+    & + label::before {
+      content: '';
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid $DarkGray;
+      border-radius: 4px;
+      margin-right: 0.5em;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 14px;
+    }
+  
+    &:not(:disabled):not(:checked) + label:hover::before {
+      border-color: $YellowLight;
+    }
+  
+    &:active + label::before {
+      background-color: $YellowDark;
+      border-color: $YellowDark;
+    }
+  
+    &:checked + label::before {
+      background-color: $YellowDark;
+      border-color: $YellowDark;
+      background-image: url("../../icon/Icon=check.svg");
+    }
+  }
+}
