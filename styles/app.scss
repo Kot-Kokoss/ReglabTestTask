@@ -7,16 +7,16 @@
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   align-items: center;
   height: 2000px;
 }
 
 .wrapper {
   display: flex;
+  margin: 16px;
 
   .left_nav {
-    margin: 16px 32px 0 16px;
     position: fixed;
     width: 288px;
 
@@ -56,8 +56,121 @@
       display: flex;
       flex-direction: column;
       gap: 4px;
-
     }
   }
 
+  .view {
+    width: 100%;
+    margin-left: 336px;
+    border: solid 1px $DarkGray;
+    border-radius: 6px;
+    overflow: hidden;
+
+    .navigation {
+      display: flex;
+      position: relative;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $DarkGray;
+        z-index: -1;
+      }     
+    }
+    
+    .tabSwitch {
+      display: flex;
+      padding: 24px 32px;
+      gap: 24px;
+      border-bottom: solid 1px $DarkGray;
+
+      .pageNav {
+        display: flex;
+        gap: 4px;
+      }
+
+      .title {
+        width: 100%;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 32px;
+        justify-content: center;
+      }
+
+      .control {
+        display: flex;
+      }
+    }
+
+    .config {
+      border-bottom: solid 1px $DarkGray;
+      padding: 32px;
+
+      .linkMenu {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 32px;        
+      }
+
+      .settings_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 24px;
+
+        .settings {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+      }
+
+      .fill {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .name {
+          display: flex;
+          gap: 16px;
+
+          .checkbox_wrap {
+            margin-top: 28px;
+
+            .info {
+              cursor: pointer;
+              margin-left: 8px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 20px;
+              height: 20px;
+              border: solid 1px $YellowLight;
+              border-radius: 100px;
+              background-color: $YellowLight;
+            }
+          }
+        }
+
+        .dropdownGroup {
+          display: flex;
+          gap: 16px;
+
+          .menu {
+            margin-top: 28px;
+          }
+        }
+
+        .confirmApplication {
+          display: flex;
+          align-items: start;          
+        }
+      }
+    }
+  }
 }

@@ -150,12 +150,12 @@ select {
   width: 504px;
   height: 64px;
   font-size: 14px;
-  font-weight: 600;
   line-height: 20px;
   text-align: left;
   transition: all 0.2s ease-out;
 }
 .inline .title {
+  font-weight: 600;
   margin-bottom: 8px;
 }
 .inline .dropdown {
@@ -168,6 +168,17 @@ select {
   padding: 7px 12px 9px 16px;
 }
 .inline .dropdown:hover {
+  background-color: #FAFAFA;
+}
+.inline input {
+  outline: none;
+  width: 100%;
+  border: solid 1px #D6D6D6;
+  border-radius: 4px;
+  padding: 7px 12px 9px 16px;
+  height: 36px;
+}
+.inline input:hover {
   background-color: #FAFAFA;
 }
 .inline .icon {
@@ -258,6 +269,7 @@ select {
 .tab.setting.active {
   background-color: #FFFFFF;
   border-width: 0 1px 0 0;
+  border-bottom: 1px solid #FFFFFF;
 }
 .tab.setting.active .close {
   background-color: #FFFFFF;
@@ -316,16 +328,16 @@ select {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   align-items: center;
   height: 2000px;
 }
 
 .wrapper {
   display: flex;
+  margin: 16px;
 }
 .wrapper .left_nav {
-  margin: 16px 32px 0 16px;
   position: fixed;
   width: 288px;
   font-size: 14px;
@@ -358,6 +370,103 @@ select {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+.wrapper .view {
+  width: 100%;
+  margin-left: 336px;
+  border: solid 1px #989898;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.wrapper .view .navigation {
+  display: flex;
+  position: relative;
+}
+.wrapper .view .navigation::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #989898;
+  z-index: -1;
+}
+.wrapper .view .tabSwitch {
+  display: flex;
+  padding: 24px 32px;
+  gap: 24px;
+  border-bottom: solid 1px #989898;
+}
+.wrapper .view .tabSwitch .pageNav {
+  display: flex;
+  gap: 4px;
+}
+.wrapper .view .tabSwitch .title {
+  width: 100%;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 32px;
+  justify-content: center;
+}
+.wrapper .view .tabSwitch .control {
+  display: flex;
+}
+.wrapper .view .config {
+  border-bottom: solid 1px #989898;
+  padding: 32px;
+}
+.wrapper .view .config .linkMenu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.wrapper .view .config .settings_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+.wrapper .view .config .settings_wrap .settings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.wrapper .view .config .fill {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.wrapper .view .config .fill .name {
+  display: flex;
+  gap: 16px;
+}
+.wrapper .view .config .fill .name .checkbox_wrap {
+  margin-top: 28px;
+}
+.wrapper .view .config .fill .name .checkbox_wrap .info {
+  cursor: pointer;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: solid 1px #FFDB4D;
+  border-radius: 100px;
+  background-color: #FFDB4D;
+}
+.wrapper .view .config .fill .dropdownGroup {
+  display: flex;
+  gap: 16px;
+}
+.wrapper .view .config .fill .dropdownGroup .menu {
+  margin-top: 28px;
+}
+.wrapper .view .config .fill .confirmApplication {
+  display: flex;
+  align-items: start;
 }
 
 /*# sourceMappingURL=styles.css.map */

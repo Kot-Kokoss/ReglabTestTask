@@ -3,12 +3,12 @@
   width: 504px;
   height: 64px;
   font-size: 14px;
-  font-weight: 600;
   line-height: 20px;
   text-align: left;
   transition: all $duration ease-out;
 
   .title {
+    font-weight: 600;
     margin-bottom: 8px;
   }
 
@@ -21,6 +21,19 @@
     border-radius: 4px;
     padding: 7px 12px 9px 16px;
 
+    &:hover {
+      background-color: $LightGray;
+    }
+  }
+
+  input {
+    outline: none;
+    width: 100%;
+    border: solid 1px $Gray;
+    border-radius: 4px;
+    padding: 7px 12px 9px 16px;
+    height: 36px;
+    
     &:hover {
       background-color: $LightGray;
     }
