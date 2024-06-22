@@ -35,37 +35,48 @@
         <div class="menuItem">
           <img src="./icon/Icon=star.svg" alt=""> 
           <div>Favorites</div>
-        </div><div class="menuItem">
+        </div>
+        <div class="menuItem">
           <img src="./icon/Icon=line-chart-up.svg" alt=""> 
           <div>Budgeting and Planning</div>
-        </div><div class="menuItem">
+        </div>
+        <div class="menuItem">
           <img src="./icon/Icon=pie-chart.svg" alt=""> 
           <div>CRM and Marketing</div>
-        </div><div class="menuItem">
+        </div>
+        <div class="menuItem">
           <img src="./icon/Icon=log-out.svg" alt=""> 
           <div>Sales</div>
-        </div><div class="menuItem">
+        </div>
+        <div class="menuItem">
           <img src="./icon/Icon=log-in.svg" alt=""> 
           <div>Purchases</div>
-        </div><div class="menuItem">
+        </div>
+        <div class="menuItem">
           <img src="./icon/Icon=route.svg" alt=""> 
           <div>Warehouse and Delivery</div>
-        </div><div class="menuItem">
+        </div>
+        <div class="menuItem">
           <img src="./icon/Icon=cube.svg" alt=""> 
           <div>Production</div>
-        </div><div class="menuItem">
+        </div>
+        <div class="menuItem">
           <img src="./icon/Icon=wallet.svg" alt=""> 
           <div>Cash Flow</div>
-        </div><div class="menuItem">
+        </div>
+        <div class="menuItem">
           <img src="./icon/Icon=bar-chart-square.svg" alt=""> 
           <div>Financial Result and Controlling</div>
-        </div><div class="menuItem">
+        </div>
+        <div class="menuItem">
           <img src="./icon/Icon=building.svg" alt=""> 
           <div>Capital Assets</div>
-        </div><div class="menuItem">
+        </div>
+        <div class="menuItem">
           <img src="./icon/Icon=bank-note.svg" alt=""> 
           <div>International Financial Accounting</div>
-        </div><div class="menuItem">
+        </div>
+        <div class="menuItem">
           <img src="./icon/Icon=settings.svg" alt=""> 
           <div>Master Data and Settings</div>
         </div>
@@ -120,7 +131,7 @@
         </div>
       </section>
       <section class="config">
-        <div class="linkMenu">
+        <div class="configMenu">
           <a href="#" class="tab_a active">Main</a>
           <a href="#" class="tab_a">Access Rights</a>
           <a href="#" class="tab_a">Form on Starting the Application</a>
@@ -217,12 +228,104 @@
               <input type="checkbox" class="custom-checkbox" name="checkbox_2" id="checkbox_2">
               <label for="checkbox_2">Can log on to Application</label>
             </div>
-            <a href="#" class="tab_a">Text</a>
+            <a href="#" class="tab_a">Set authentication restraction</a>
           </div>         
         </div>
       </section>
       <section class="additional">
-        
+        <div class="additionalsMenu">
+          <a href="#" class="tab_a active">Main</a>
+          <a href="#" class="tab_a">Addresses and Phones</a>
+          <a href="#" class="tab_a">Comment</a>
+        </div>
+        <div class="userSettings">
+          <div class="inline">
+            <div class="title">Username (used on sign in)</div>
+            <select class="dropdown">
+              <option value="1">Administrator</option>
+              <option value="2">User2</option>
+              <option value="3">User3</option>
+            </select>
+            <img src="./icon/Icon=chevron.svg" class="icon">
+          </div>
+          <div class="checkboxGroup">
+            <ul class="level1">
+              <li>
+                <div class="checkbox_wrap">
+                  <input type="checkbox" class="custom-checkbox" name="checkbox_2" id="checkbox_2">
+                  <label for="checkbox_2">1C:Enterprise authentication</label>
+                </div>
+              </li>
+              <ul class="level2">
+                <li>
+                  <div class="passwordGroup">
+                    <img src="./icon/Icon=unlock.svg" alt="">
+                    <div class="title">Blank password</div>
+                    <a href="#" class="tab_a">Set password</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox_wrap">
+                    <input type="checkbox" class="custom-checkbox" name="checkbox_3" id="checkbox_3">
+                    <label for="checkbox_3">Require to set a password upon authorization</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox_wrap">
+                    <input type="checkbox" class="custom-checkbox" name="checkbox_4" id="checkbox_4">
+                    <label for="checkbox_4">User has been prevented from changing password</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox_wrap">
+                    <input type="checkbox" class="custom-checkbox" name="checkbox_5" id="checkbox_5">
+                    <label for="checkbox_5">Show in the selection list</label>
+                  </div>
+                </li>
+              </ul>
+              <li>
+                <div class="checkbox_wrap">
+                  <input type="checkbox" class="custom-checkbox" name="checkbox_6" id="checkbox_6">
+                  <label for="checkbox_6">OpenId authentication</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox_wrap">
+                  <input type="checkbox" class="custom-checkbox" name="checkbox_7" id="checkbox_7">
+                  <label for="checkbox_7">OS authentication</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="charterGroup">
+            <div class="inline">
+              <div class="title">Раздел по умолчанию</div>
+              <select class="dropdown">
+                <option value="" selected disabled hidden></option>
+                <option value="1">Раздел1</option>
+                <option value="2">Раздел2</option>
+                <option value="3">Раздел3</option>
+              </select>
+              <img src="./icon/Icon=chevron.svg" class="icon">
+            </div>
+            <button class="button secondary menu">
+              <img src="./icon/Icon=dots-horizontal.svg" alt="">
+            </button>
+          </div>
+          <div class="inline">
+            <div class="title">Application interface language</div>
+            <select class="dropdown">
+              <option value="1">English</option>
+              <option value="2">Russian</option>
+              <option value="3">Kazakh</option>
+            </select>
+            <img src="./icon/Icon=chevron.svg" class="icon">
+          </div>
+          <div class="save">
+            <button class="button secondary">Save</button>
+            <button class="button primary">Save and Close</button>
+          </div>
+        </div>
       </section>
     </main>
 
