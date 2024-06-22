@@ -199,6 +199,19 @@
 
           .checkbox_wrap  {
             justify-content: left;
+
+            .info {
+              cursor: pointer;
+              margin-left: 8px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 20px;
+              height: 20px;
+              border: solid 1px $YellowDark;
+              border-radius: 100px;
+              background-color: $YellowDark;
+            }
           }
 
           .passwordGroup {

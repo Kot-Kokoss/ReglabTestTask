@@ -183,7 +183,7 @@ select {
 }
 .inline .icon {
   top: 37px;
-  left: 476px;
+  right: 12px;
   pointer-events: none;
   position: absolute;
   width: 16px;
@@ -489,6 +489,18 @@ select {
 }
 .wrapper .view .additional .userSettings .checkboxGroup .checkbox_wrap {
   justify-content: left;
+}
+.wrapper .view .additional .userSettings .checkboxGroup .checkbox_wrap .info {
+  cursor: pointer;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: solid 1px #FFD11A;
+  border-radius: 100px;
+  background-color: #FFD11A;
 }
 .wrapper .view .additional .userSettings .checkboxGroup .passwordGroup {
   display: flex;
