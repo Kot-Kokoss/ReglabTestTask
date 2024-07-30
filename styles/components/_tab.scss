@@ -1,4 +1,4 @@
-.tab {
+.navigation__tab {
   cursor: pointer;
   font-size: 12px;
   font-weight: 400;
@@ -14,7 +14,7 @@
     background-color: $Gray;
   }
 
-  &.home {
+  &-home {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
     }
   }
 
-  &.setting {
+  &-setting {
     height: 36px;
     position: relative;
     padding: 9px 12px 10px;
@@ -59,7 +59,7 @@
       }
     }
 
-    &.active {
+    &_active {
       background-color: $White;
       border-width: 0 1px 0 0;
       border-bottom: 1px solid $White;
