@@ -213,7 +213,7 @@ select {
   height: 20px;
 }
 
-.navigation__tab {
+.tab {
   cursor: pointer;
   font-size: 12px;
   font-weight: 400;
@@ -225,31 +225,31 @@ select {
   border-color: #989898;
   transition: all 0.15s ease-out;
 }
-.navigation__tab:hover {
+.tab:hover {
   background-color: #D6D6D6;
 }
-.navigation__tab-home {
+.tab.home {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 36px;
   height: 36px;
 }
-.navigation__tab-home img {
+.tab.home img {
   width: 16px;
   height: 16px;
 }
-.navigation__tab-setting {
+.tab.setting {
   height: 36px;
   position: relative;
   padding: 9px 12px 10px;
   align-items: center;
 }
-.navigation__tab-setting:hover .close {
+.tab.setting:hover .close {
   display: flex;
   box-shadow: -8px 0px 8px 0px #E6E6E6;
 }
-.navigation__tab-setting .close {
+.tab.setting .close {
   display: none;
   align-items: center;
   justify-content: center;
@@ -263,19 +263,19 @@ select {
   border-style: solid;
   border-color: #989898;
 }
-.navigation__tab-setting .close img {
+.tab.setting .close img {
   padding: 6px 8px 4px;
 }
-.navigation__tab-setting_active {
+.tab.setting.active {
   background-color: #FFFFFF;
   border-width: 0 1px 0 0;
   border-bottom: 1px solid #FFFFFF;
 }
-.navigation__tab-setting_active .close {
+.tab.setting.active .close {
   background-color: #FFFFFF;
   border-width: 0;
 }
-.navigation__tab-setting_active:hover .close {
+.tab.setting.active:hover .close {
   display: flex;
   box-shadow: -8px 0px 8px 0px #FFFFFF;
 }
